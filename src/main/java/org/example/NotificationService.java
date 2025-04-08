@@ -1,12 +1,12 @@
 package org.example;
 
-public class NotificationService {
-    private final EmailService emailService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-    // Constructor Dependency injection
-    public  NotificationService(EmailService emailService){
-        this.emailService = emailService;
-    }
+@Service
+public class NotificationService {
+    @Autowired //Field Dependency Injection
+    private EmailService emailService;
 
     public void notifyUser(String userEmail){
         String subject = "Welcome!";
