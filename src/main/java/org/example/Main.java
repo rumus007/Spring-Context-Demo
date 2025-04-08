@@ -10,5 +10,8 @@ public class Main {
         for(String beanName : context.getBeanDefinitionNames()){
             System.out.println(beanName);
         }
+
+        NotificationService notificationService = context.getBean(NotificationService.class);
+        notificationService.notifyUser("user@example.com");
     }
 }
