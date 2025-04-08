@@ -10,6 +10,8 @@ repositories {
 }
 
 dependencies {
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '3.4.4'
     // https://mvnrepository.com/artifact/org.springframework/spring-context
     implementation group: 'org.springframework', name: 'spring-context', version: '7.0.0-M3'
     testImplementation platform('org.junit:junit-bom:5.10.0')
